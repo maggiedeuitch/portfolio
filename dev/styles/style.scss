@@ -1,0 +1,185 @@
+@import "partials/_setup.scss";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	font-size: 2rem;
+	font-family: "Press Start 2P", cursive;
+	color: white;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+
+main {
+	display: flex;
+	margin: 0 auto;
+}
+
+
+.choose-your-dog {
+	// position: absolute;
+	max-width: 450px;
+	max-height: 450px;
+	padding: 3px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: absolute;
+	top:25%;
+	right: 25%;
+	left:25%;
+	bottom: 25%;
+	z-index: 10;
+	background: red;
+	border-radius: 5px;
+}
+.dog-options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.kenzo, .junior, .dug {
+	padding: 5px;
+	width: 30%;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	position: relative;
+	// display: block;
+	margin: 0 auto;
+}
+
+.canvas {
+	background: white;
+}
+
+.top-bar, .control-bar, .keyboard-instructions {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	background-color: red;
+}
+
+.top-bar {
+	top: 0;
+	justify-content: space-between;
+}
+
+.end-of-game {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+	color: black;
+	top: 25%;
+	right: 25%;
+	left: 25%;
+	bottom: 25%;
+	
+}
+.keyboard-instructions, .control-bar {
+	bottom: 0;
+	justify-content: center;
+}
+
+
+.keyboard-instructions {
+	padding: 5px 80px;
+}
+
+.control-bar {
+	display: none;
+}
+
+.instructions {
+	flex-basis: 30%;
+}
+.left-and-right, .new-game-button {
+	display: flex;
+	align-items: center;
+}
+.new-game-button {
+	flex-basis: 30%;
+	justify-content: flex-end;
+}
+.left-and-right {
+	flex-basis: 30%;
+	justify-content: center;
+}
+
+
+.health, .score, .left, .right, .new-game{
+	margin: 10px;
+}
+
+.left {
+	margin-right: 50px;
+}
+.health-three, .health-two, .health-one {
+	width: 100px;
+    height: 30px;
+}
+
+.health-three {
+	background: url(../../assets/health.png) 0 0;
+	background-size: 100%;
+}
+
+.health-two {
+	background: url(../../assets/health.png) 0 -30px;
+	background-size: 100%;
+}
+
+.health-one {	
+	background: url(../../assets/health.png) 0 -60px;
+	background-size: 100%;
+}
+
+
+@keyframes game-over {
+  50% {
+    opacity: 0.0;
+  }
+}
+.game-over {
+  animation: game-over 1s step-start 0s infinite;
+}
+
+
+.fas {
+	font-size: 4rem;
+}
+
+@import "partials/_media-queries.scss";
+
+
