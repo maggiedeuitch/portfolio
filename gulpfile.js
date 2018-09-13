@@ -9,7 +9,7 @@ const notify = require('gulp-notify');
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
-    return gulp.src('./src/styles/**/*.scss')
+    return gulp.src('./dev/styles/**/*.scss')
         .pipe(sass())
         .pipe(concat('style.css'))
         .pipe(gulp.dest('./public/styles/'))
@@ -17,7 +17,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('js', () => {
-    return browserify('./src/scripts/app.js', { debug: true })
+    return browserify('./dev/scripts/app.js', { debug: true })
         .transform('babelify', {
             sourceMaps: true,
             presets: ['@babel/preset-env']
@@ -42,8 +42,8 @@ gulp.task('bs', () => {
 });
 
 gulp.task('watch',() => {
-    gulp.watch('./src/**/*.js', ['js']);
-    gulp.watch('./src/**/*.scss', ['styles']);
+    gulp.watch('./dev/**/*.js', ['js']);
+    gulp.watch('./dev/**/*.scss', ['styles']);
     gulp.watch('./public/styles/style.css', reload);
     gulp.watch('./index.html',reload);
 });

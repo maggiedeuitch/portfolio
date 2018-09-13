@@ -1,0 +1,60 @@
+// font-family: 'Cabin Sketch', cursive;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Noto Serif', serif;
+
+html {
+    font-size: 62.5%;   
+}
+
+.logo__text,
+.text-container__heading {
+    font-family: "Cabin Sketch", cursive;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+        &--large{
+            font-size: 8rem;
+        }
+}
+
+.menu,
+.text-container {
+    &__paragraph,
+    &__subheading,
+    &__link {
+        font-family: "Noto Serif, serif";
+        text-decoration: none;
+        font-size: 2rem;
+        &--small {
+            font-size: 1.8rem;
+        }
+        &--uppercase {
+            text-transform: uppercase;
+        }
+    }
+    &--uppercase {
+            text-transform: uppercase;
+        }
+}
+
+
+// .text-container__subheading,
+// .menu {
+//     text-transform: uppercase;
+//     font-size: 2rem;
+//         &--small {
+//             font-size: 1.5rem;
+//         }
+// }
+
+.text-container__paragraph,
+.menu {
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
