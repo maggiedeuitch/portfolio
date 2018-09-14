@@ -1,8 +1,12 @@
 @import "partials/_setup.scss";
+@import "partials/_utils.scss";
 @import "partials/_typography.scss";
 @import "partials/_header.scss";
 @import "partials/_menu.scss";
-
+@import "partials/_hero.scss";
+@import "partials/_about.scss";
+@import "partials/_portfolio.scss";
+@import "partials/_blog.scss";
 
 
 
@@ -12,7 +16,7 @@ html {
 
 body {
 	margin: 0;
-	color: black;
+	// color: black;
 	background-color: white;
 }
 

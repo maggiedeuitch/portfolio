@@ -15,24 +15,24 @@
         <div class="wrapper">
             <nav class="nav">
                 <div class="logo">
-                    <h3 class="logo__text">MD</h2>
+                    <a href="#top" class="logo__link">MD</a>
                 </div>
-                <menu class="menu menu--uppercase menu--horizontal">
-                    <ul class="menu__list">
+                <menu class="menu menu--uppercase">
+                    <ul class="menu__list menu__list--horizontal">
                         <li class="menu__item">
-                            <a class="menu__link" href="#top">home</a>
+                            <a class="menu__link menu__link--border" href="#top">home</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#about">about</a>
+                            <a class="menu__link menu__link--border" href="#about">about</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#portfolio">portfolio</a>
+                            <a class="menu__link menu__link--border" href="#portfolio">portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#blog">blog</a>
+                            <a class="menu__link menu__link--border" href="#blog">blog</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#contact">contact</a>
+                            <a class="menu__link menu__link--border" href="#contact">contact</a>
                         </li>
                     </ul><!--menu__list-->
                 </menu><!--menu-->
@@ -42,26 +42,36 @@
     <main class="main">
         <section class="section hero">
             <div class="wrapper">
-                <img class="hero__image" src="https://via.placeholder.com/1920x735">
-                <div class="text-container">
-                    <h1 class="text-container__heading text-container__heading--large">Maggie Deuitch</h1>
-                    <h2 class="text-container__subheading text-container__subheading--uppercase">Toronto-based web developer.</h3>
+                <div class="hero-text-container text-container">
+                    <h1 class="text-container__heading text-container__heading--align-right text-container__heading--large">Maggie Deuitch</h1>
+                    <h2 class="text-container__subheading text-container__subheading--align-right text-container__subheading--uppercase">Toronto-based web developer.</h3>
                 </div>
             </div><!--wrapper-->
         </section><!--hero-->
         <section id="about" class="section about">
             <div class="wrapper">
-                <div class="text-container">
-                    <h2 class="text-container__heading">About Me</h2>
-                    <p class="text-container__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit molestiae maxime, iure assumenda tenetur dolorem atque in veritatis veniam at, unde, nihil recusandae architecto voluptatem quaerat quae placeat illum voluptatibus?</p>
-                </div>
-            </div>
+                <div class="about__content-container">
+                    <div class="about__content-container--left">
+                        <div class="about-image-container">
+                            <img src="./assets/2018-summer-bootcamp-maggie-deuitch-3.jpg" alt="Maggie Deuitch Toronto web developer" class="about-image-container__img">
+                        </div><!--about-image-container-->
+                    </div><!--about__content-container--left-->
+                    <div class="about__content-container--right">
+                        <div class="about__text-container">
+                            <h2 class="text-container__heading">About<br/>Me</h2>
+                            <p class="text-container__paragraph text-container__paragraph--small">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Sit molestiae maxime, iure assumenda tenetur dolorem atque in veritatis veniam at, unde, nihil recusandae architecto
+                                voluptatem quaerat quae placeat illum voluptatibus?</p>
+                        </div><!--text-container-->
+                    </div><!--about container right-->
+                </div><!--about content container-->
+            </div><!--wrapper-->
         </section><!--about-->
         <section id="portfolio" class="section portfolio">
             <div class="wrapper">
-                <div class="text-container">
-                    <h2 class="text-container__heading">My Portfolio</h2>
-                    <a class="text-container__link" href="./portfolio">View All</a>
+                <div class="portfolio-text-container">
+                    <h2 class="text-container__heading">My<br/> Portfolio</h2>
+                    <!-- <a class="text-container__link" href="./portfolio">View All</a> -->
                 </div>
             </div><!--wrapper-->
                 <div class="image-row">
@@ -70,15 +80,15 @@
                     <a class="image-row__link" href="#"><img class="image-row__image" src="https://via.placeholder.com/477x562" alt=""></a>
                 </div><!--image-row-->
                 <div class="image-row">
+                    <a class="image-row__link" href="#"><img class="image-row__image" src="https://via.placeholder.com/477x562" alt=""></a>
+                    <a class="image-row__link" href="#"><img class="image-row__image" src="https://via.placeholder.com/477x562" alt=""></a>
                     <a class="image-row__link" href="#"><img class="image-row__image" src="https://via.placeholder.com/933x562" alt=""></a>
-                    <a class="image-row__link" href="#"><img class="image-row__image" src="https://via.placeholder.com/477x562" alt=""></a>
-                    <a class="image-row__link" href="#"><img class="image-row__image" src="https://via.placeholder.com/477x562" alt=""></a>
                 </div><!--image-row-->
         </section><!--portfolio-->
         <section class="section blog" id="blog">
             <div class="wrapper">
-                <div class="text-container">
-                    <h2 class="text-container__heading">My Blog</h2>
+                <div class="text-container blog-text-container">
+                    <h2 class="text-container__heading">My<br/> Blog</h2>
                 </div>
                 <div class="image-container">
                     <a class="blog__link" href="#"><img class="image-container__image" src="https://via.placeholder.com/1170x500" alt=""></a>
@@ -90,7 +100,7 @@
                         <h4 class="text-container__subheading text-container__subheading--small">date</h4>
                         <h4 class="text-container__subheading text-container__subheading--small">comments</h4>
                     </div><!--blog__post-info-->
-                    <p class="text-container__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio excepturi mollitia eligendi non. Accusamus nostrum totam doloremque nesciunt, dolores suscipit necessitatibus eaque perferendis veritatis doloribus.</p>
+                    <p class="text-container__paragraph text-container__paragraph--small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio excepturi mollitia eligendi non. Accusamus nostrum totam doloremque nesciunt, dolores suscipit necessitatibus eaque perferendis veritatis doloribus.</p>
                     <a class="text-container__link" href="./blog">Read More</a>
                 </div><!--text-container-->
             </div><!--wrapper-->

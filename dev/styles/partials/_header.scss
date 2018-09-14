@@ -1,4 +1,12 @@
 .nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__link {
+    &:hover {
+        color: pink;
+    }
 }

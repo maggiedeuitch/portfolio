@@ -3,17 +3,42 @@
 // font-family: 'Noto Serif', serif;
 
 html {
-    font-size: 62.5%;   
+    font-size: 62.5%;
 }
 
-.logo__text,
+html, a {
+    color: $darkgrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.logo__link,
 .text-container__heading {
     font-family: "Cabin Sketch", cursive;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+    text-decoration: none;
+    line-height: 4rem;
+    border-bottom: 1px 
         &--large{
-            font-size: 8rem;
+            font-size: 9rem;
+            line-height: 8rem;
         }
+        &::after {
+            content: "";
+            display: block;
+            // margin: 0 auto;
+            width: 0;
+            padding-top: 2px;
+            border-bottom: 2px dotted pink;
+            transition: width .5s;
+        }
+        &:hover::after {
+            width: 50%;
+        }
+
 }
 
 .menu,
@@ -46,10 +71,10 @@ html {
 //         }
 // }
 
-.text-container__paragraph,
-.menu {
-    font-size: 1.8rem;
-}
+// .text-container__paragraph,
+// .menu {
+//     font-size: 1.8rem;
+// }
 
 
 

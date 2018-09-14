@@ -1,0 +1,22 @@
+.hero {
+    background-image: url(https://via.placeholder.com/1920x735);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 735px;
+}
+.hero-text-container {
+    transform: translateY(75%);
+
+}
+.text-container {
+    max-width: 50%;
+        &__heading,
+        &__subheading {
+            &--align-right {
+            text-align: right;
+            }
+        }
+        &__heading {
+            margin-bottom: 30px;
+        }
+}

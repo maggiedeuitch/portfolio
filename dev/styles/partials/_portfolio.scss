@@ -1,0 +1,22 @@
+.portfolio {
+    padding-bottom: 75px;
+}
+
+.portfolio-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 100%;
+        &__link {
+            margin-right: 10px;
+        }
+        &__image {
+            max-width: 100%;
+        }
+}

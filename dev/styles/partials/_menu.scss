@@ -1,6 +1,32 @@
 .menu {
+    padding: 0;
     &__list,
     &__item {
+    padding: 0;
+    margin-left: 20px;
     list-style: none;
+    &--horizontal {
+        display: flex;
+        flex-direction: row;
+        }
+    }
+    &__link {
+        transition: all .3s;
+        &:hover {
+            color: pink;
+        }
+        &--border{
+            &:hover {
+                border: 2px dotted pink;
+                padding: 3px;
+            }
+        }
 }
+
+
+.menu__link {
+    transition: all .3s;
+
+
+    }
 }

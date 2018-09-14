@@ -1,0 +1,38 @@
+.about {
+        &__text-container {
+            padding: 50px 20px;
+            // height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &__content-container {
+            padding-top: 50px;
+            padding-bottom: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+                &--left {
+                    width: 65%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                }
+                &--right {
+                    width: 35%;
+                }
+        }
+}
+
+
+.about-image-container {
+    display: inline-block;
+    width: 50%;
+    margin-right: 50px;
+        &__img {
+            max-width: 100%;
+        }
+}
+
