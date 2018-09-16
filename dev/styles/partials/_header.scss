@@ -3,10 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo__link {
-    &:hover {
-        color: pink;
-    }
+    max-height: 65px;
+    width: 100%;
 }

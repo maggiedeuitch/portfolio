@@ -15,8 +15,23 @@
     width: 100%;
         &__link {
             margin-right: 10px;
+            display:inline-block;
+            width: 50%;
         }
         &__image {
             max-width: 100%;
+        }
+        &__description {
+            width: 50%;
+            display: flex;
+                &--half {
+                    width: calc(50% - 10px);
+                }
+                &--left {
+                    margin-right: 10px;
+                }
+                &--right {
+                    margin-left: 10px;
+                }
         }
 }

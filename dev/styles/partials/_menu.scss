@@ -13,20 +13,11 @@
     &__link {
         transition: all .3s;
         &:hover {
-            color: pink;
+            color: orange;
         }
-        &--border{
-            &:hover {
-                border: 2px dotted pink;
-                padding: 3px;
-            }
-        }
-}
-
+    }
 
 .menu__link {
     transition: all .3s;
-
-
     }
 }

@@ -1,15 +1,24 @@
 .hero {
-    background-image: url(https://via.placeholder.com/1920x735);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 735px;
+    height: calc(100vh - 65px);
+    &__container{
+        // padding-top: 20vh;
+    }
 }
-.hero-text-container {
-    transform: translateY(75%);
 
+.hero-svg {
+    position: relative;
 }
+
+
+.hero-text-container {
+    position: absolute;
+    width: 100%;
+    bottom: 6vh;
+    z-index: 100;
+}
+
 .text-container {
-    max-width: 50%;
+        // max-width: 50%;
         &__heading,
         &__subheading {
             &--align-right {
@@ -17,6 +26,109 @@
             }
         }
         &__heading {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 }
+
+//////SVG STYLES////////////////
+.cls-1 {
+        fill: transparent;
+        stroke: none;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+    }
+
+.cls-2 {
+        font-size: 29px;
+        letter-spacing: 0.02em;
+    }
+
+.cls-2,
+.cls-6 {
+        font-family: "Cabin Sketch", cursive;
+    }
+
+.cls-3 {
+        letter-spacing: 0.03em;
+    }
+
+.cls-4 {
+        letter-spacing: -0.05em;
+    }
+
+.cls-5 {
+        letter-spacing: 0.01em;
+    }
+
+.cls-6 {
+        font-size: 45px;
+        letter-spacing: 0.03em;
+    }
+
+.cls-7 {
+        letter-spacing: -0.01em;
+    }
+
+.cls-8 {
+        letter-spacing: 0.02em;
+    }
+
+.cls-9 {
+        letter-spacing: 0.02em;
+    }
+
+.coffee-shape,
+.coffee-text,
+.frame-shape,
+.frame-text,
+.laptop-shape,
+.laptop-text,
+.skills-shape,
+.skills-text {
+    fill:transparent;
+    transition: all .3s;
+}
+
+.coffee-shape {
+    &:hover {
+        fill: white;
+        stroke: black;
+    }
+    &:hover ~ .coffee-text {
+        fill: $darkgrey;
+    }
+}
+
+.frame-shape {
+    &:hover {
+        fill: white;
+        stroke: black;
+
+    }
+    &:hover ~ .frame-text {
+        fill: $darkgrey;
+    }
+}
+
+.laptop-shape {
+    &:hover {
+        fill: white;
+        stroke: black;
+
+    }
+    &:hover ~ .laptop-text {
+        fill: $darkgrey;
+    }
+}
+
+.skills-shape {
+    &:hover {
+        fill: white;
+        stroke: black;
+
+    }
+    &:hover ~ .skills-text {
+        fill: $darkgrey;
+    }
+}
+

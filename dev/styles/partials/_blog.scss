@@ -3,4 +3,23 @@
     flex-direction: row;
     justify-content: flex-end;
     max-width: 100%;
+        &--flex-column {
+            flex-direction: column;
+        }
 }
+
+.blog {
+    &__post-info {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.blog-image-container {
+    max-width: 100%;
+        &__image {
+            width: 100%;
+        }
+}
+

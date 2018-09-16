@@ -1,6 +1,8 @@
 // font-family: 'Cabin Sketch', cursive;
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Noto Serif', serif;
+// font-family: 'Amatic SC', cursive;
+
 
 html {
     font-size: 62.5%;
@@ -14,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.logo__link,
+.logo__text,
 .text-container__heading {
     font-family: "Cabin Sketch", cursive;
     text-transform: uppercase;
@@ -25,20 +27,10 @@ h1, h2, h3, h4, h5, h6 {
         &--large{
             font-size: 9rem;
             line-height: 8rem;
+            margin-bottom: 0;
         }
-        &::after {
-            content: "";
-            display: block;
-            // margin: 0 auto;
-            width: 0;
-            padding-top: 2px;
-            border-bottom: 2px dotted pink;
-            transition: width .5s;
-        }
-        &:hover::after {
-            width: 50%;
-        }
-
+    // text-shadow: 2px 2px 0px rgba(237, 17, 100, 1);
+    text-shadow:  1px 0 0px $pink, 1px 2px 0px $pink, 2px 1px 0px $pink, 2px 3px 0px $pink, 3px 2px 0px $yellow, 3px 4px 0px $yellow, 4px 3px 0px $pink, 4px 5px 0px $pink;
 }
 
 .menu,
@@ -46,9 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     &__paragraph,
     &__subheading,
     &__link {
-        font-family: "Noto Serif, serif";
+        font-family: "Noto Serif", serif;
         text-decoration: none;
         font-size: 2rem;
+        font-weight: normal;
         &--small {
             font-size: 1.8rem;
         }
@@ -61,6 +54,11 @@ h1, h2, h3, h4, h5, h6 {
         }
 }
 
+.contact__container-text {
+    font-family: "Noto Serif", serif;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
 
 // .text-container__subheading,
 // .menu {
