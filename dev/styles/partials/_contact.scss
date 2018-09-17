@@ -1,6 +1,6 @@
 .contact {
-    background-color: $darkgrey;
-    color: white;
+    // background-color: $darkgrey;
+    // color: white;
     padding-top: 50px;
     padding-bottom: 75px;
     &__container {
@@ -37,7 +37,7 @@
     align-items: center;
         &__icon {
             font-size: 2.5rem;
-            color: white;
+            // color: white;
             margin-top: 100px;
             margin-right: 30px;
         }
@@ -74,9 +74,9 @@
             font-size: 1.8rem;
             align-self: flex-end;
             background-color: transparent;
-            border: 1px solid white;
+            // border: 1px solid white;
             border-radius: 5px;
-            color: white;
+            // color: white;
         }
 
 }
