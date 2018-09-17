@@ -12,29 +12,39 @@ html, a {
     color: $darkgrey;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
 .logo__text,
+.image-row__heading,
 .text-container__heading {
     font-family: "Cabin Sketch", cursive;
     text-transform: uppercase;
     font-size: 4.5rem;
     text-decoration: none;
     line-height: 4rem;
-    border-bottom: 1px 
+    // border-bottom: 1px 
         &--large{
             font-size: 9rem;
             line-height: 8rem;
             margin-bottom: 0;
+        }
+        &--align-right {
+            text-align: right;
+        }
+        &--small {
+            font-size: 3rem;
+            letter-spacing: 2px;
         }
     // text-shadow: 2px 2px 0px rgba(237, 17, 100, 1);
     text-shadow:  1px 0 0px $pink, 1px 2px 0px $pink, 2px 1px 0px $pink, 2px 3px 0px $pink, 3px 2px 0px $yellow, 3px 4px 0px $yellow, 4px 3px 0px $pink, 4px 5px 0px $pink;
 }
 
 .menu,
+.image-row,
 .text-container {
+    &__description,
     &__paragraph,
     &__subheading,
     &__link {
@@ -47,6 +57,9 @@ h1, h2, h3, h4, h5, h6 {
         }
         &--uppercase {
             text-transform: uppercase;
+        }
+        &--align-right {
+            text-align: right;
         }
     }
     &--uppercase {
