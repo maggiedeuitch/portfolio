@@ -27,19 +27,36 @@
     color: white;
 }
 
-    // &__icon, 
-    // &__image {
-    //     box-shadow: 
-    //         01px 0 $yellow,
-    //         01px 02px $yellow,
-    //         02px 01px $yellow,
-    //         02px 03px $yellow,
-    //         03px 02px $yellow,
-    //         03px 04px $yellow,
-    //         04px 03px $yellow,
-    //         04px 05px $yellow,
-    //         05px 04px $yellow,
-    //         05px 06px $yellow;
-    // }
+}
+
+///////////////MEDIA QUERIES////////////////
+@media (max-width: 860px) {
+    .section-skills {
+        &__icon {
+            font-size: 8rem;
+        }
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        &__image {
+            width: 80px;
+        }
+}
+}
+
+@media (max-width: 500px) {
+    .section-skills {
+        padding-bottom: 20px;
+        &__icon {
+            font-size: 3.5rem;
+        }
+        &__image {
+            width: 35px;
+        }
+    }
 }
 

@@ -3,14 +3,14 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#00AEEF;}
+	.st0{fill:#FFFFFF;}
 	.st1{fill:none;}
 </style>
 <g>
 	<path class="st0" d="M313.9,184.9l-51.2,47.7l-47.6-95.9l24.6-55.2c6.2-11.1,16.4-11.1,22.6,0L313.9,184.9z"/>
 	<polygon class="st1" points="262.7,232.6 71.2,410.8 215.1,136.7 	"/>
 	<path class="st0" d="M370,112c9.2-8.8,18.6-5.8,21,6.7l49.8,289.7l-165.2,99c-5.8,3.2-21.1,4.6-21.1,4.6s-14-1.7-19.3-4.6
-		L71.2,410.8L370,112z"/>
+		l-164-96.6L370,112z"/>
 	<path class="st0" d="M215.1,136.7l-144,274.1l64.1-400.6c2.4-12.5,9.5-13.7,15.8-2.7L215.1,136.7z"/>
 </g>
 </svg>

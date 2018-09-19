@@ -1,8 +1,8 @@
 .about {
-    height: 100vh;
-    padding: 75px 0 75px 0;
+    min-height: 100vh;
+    padding: 250px 0 250px 0;
         &__text-container {
-            padding: 0 160px 0 20px;
+            padding: 0 0 0 45px;
             /* width: 94%; */
             display: flex;
             flex-direction: column;
@@ -10,17 +10,17 @@
             /* align-self: baseline; */
         }
         &__content-container {
-            padding-top: 50px;
+            // padding-top: 150px;
             // padding-bottom: 75px;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
                 &--left {
-                    width: calc(50% - 20px);
+                    // width: calc(50% - 20px);
                     /* flex-direction: row; */
                 }
                 &--right {
-                    width: 70%;
+                    // width: 70%;
                     display: flex;
                     align-items: flex-end;
                     justify-content: flex-end;
@@ -33,7 +33,7 @@
 .about-image-container {
     display: inline-block;
     // width: 50%;
-    margin-right: 50px;
+    margin-left: 200px;
         &__img {
             max-width: 100%;
             box-shadow: 
@@ -50,3 +50,66 @@
         }
 }
 
+
+//////////////////MEDIA QUERIES///////////////
+
+
+
+@media (max-width: 1500px) {
+    .about {
+        padding: 100px 0 0 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        // padding: 0;
+        &__content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                &--left {
+                    width: 33%;
+                }
+            }
+        &__text-container {
+            padding: 40px 0 0 45px;
+            flex-direction: row;
+            align-items: center;
+                & p {
+                    padding-left: 30px;
+                }
+                & h2 {
+                    padding-top: 0;
+                }
+            }
+        }
+        
+        
+    .about-image-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            &__content-container {
+                &--left {
+                    width: 25%;
+                }
+            }
+            &__text-container {
+                flex-direction: column;
+                // padding-top: 20px;
+                padding: 20px 0;
+                    & h2 {
+                        text-align: center;
+                    }
+            }
+}
+}
