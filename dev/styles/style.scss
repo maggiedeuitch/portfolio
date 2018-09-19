@@ -8,6 +8,7 @@
 @import "partials/_portfolio.scss";
 @import "partials/_contact.scss";
 @import "partials/_skills.scss";
+@import "partials/_bens-bagels.scss";
 // @import "partials/_blog.scss";
 
 
@@ -19,12 +20,11 @@ html {
 
 body {
 	margin: 0;
-	// color: black;
 	background-color: white;
 }
 
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 0 2%;
+	padding: 0 4%;
 }

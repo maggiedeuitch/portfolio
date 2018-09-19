@@ -1,23 +1,91 @@
-.menu {
-    padding: 0;
-    &__list,
-    &__item {
-    padding: 0;
-    margin-left: 20px;
+// .menu {
+//     padding: 0;
+//     &__list,
+//     &__item {
+//     padding: 0;
+//     margin-left: 20px;
+//     list-style: none;
+//     &--horizontal {
+//         display: flex;
+//         flex-direction: row;
+//         }
+//     }
+//     &__link {
+//         transition: all .3s;
+//         &:hover {
+//             color: $pink;
+//         }
+//     }
+
+// .menu__link {
+//     transition: all .3s;
+//     }
+// }
+
+
+    .head-nav{
+    // display: flex;
+    // padding: none;
     list-style: none;
-    &--horizontal {
-        display: flex;
-        flex-direction: row;
+    flex: 2 1 60%;
+    display: none;
+    text-align: right;
+        &__item {
+            margin: 0 10px;
+            text-transform: uppercase;
+            display: inline-block;
         }
-    }
-    &__link {
-        transition: all .3s;
-        &:hover {
-            color: orange;
+        &__link {
+            transition: all .3s;
+                &:hover {
+                    color: $pink;
+                }
         }
     }
 
-.menu__link {
-    transition: all .3s;
+    .ham-menu{
+    font-size: 2rem;
+    background: none;
+    border:none;
+    box-shadow: 
+                01px 0px $pink,
+                01px 02px $blue,
+                02px 01px $pink,
+                02px 03px $blue,
+                03px 02px $pink,
+                03px 04px $blue,
+                04px 03px $pink,
+                04px 05px $blue,
+                05px 04px $pink,
+                05px 06px $blue;
     }
+
+
+//// media queries//////////
+    @media (max-width: 400px) {
+
+    .head-nav__item {
+        margin: 0;
+        width: 75px;
+        text-align: right;
+        margin-right: 5px;
+    }
+
+    .head-nav__link--small {
+        font-size: 1.2rem;
+    }
+
+    .head-nav {
+        // list-style: none;
+        // flex: 2 1 60%;
+        // display: none;
+        text-align: right;
+        padding-left: 0;
+        // display: flex;
+        // justify-content: flex-end;
+        // flex-wrap: wrap;
+
+        }
 }
+
+

@@ -1,8 +1,8 @@
 .about {
-    // max-height: 100vh;
+    height: 100vh;
     padding: 75px 0 75px 0;
         &__text-container {
-            padding: 0 20px 0 160px;
+            padding: 0 160px 0 20px;
             /* width: 94%; */
             display: flex;
             flex-direction: column;
@@ -16,15 +16,15 @@
             flex-direction: row;
             align-items: flex-end;
                 &--left {
-                    width: 70%;
-                    display: flex;
+                    width: calc(50% - 20px);
                     /* flex-direction: row; */
-                    align-items: flex-end;
-                    justify-content: flex-end;
                 }
                 &--right {
-                    width: calc(50% - 20px);
-                    margin-left: 20px;
+                    width: 70%;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    // margin-left: 20px;
                 }
         }
 }

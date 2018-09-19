@@ -1,7 +1,5 @@
 // font-family: 'Cabin Sketch', cursive;
-// font-family: 'Open Sans', sans-serif;
 // font-family: 'Noto Serif', serif;
-// font-family: 'Amatic SC', cursive;
 
 
 html {
@@ -41,7 +39,8 @@ h1, h2, h3, h4, h5, h6, p {
     text-shadow:  1px 0 0px $pink, 1px 2px 0px $pink, 2px 1px 0px $pink, 2px 3px 0px $pink, 3px 2px 0px $yellow, 3px 4px 0px $yellow, 4px 3px 0px $pink, 4px 5px 0px $pink;
 }
 
-.menu,
+// .menu,
+.head-nav,
 .image-row,
 .text-container {
     &__description,
@@ -67,11 +66,26 @@ h1, h2, h3, h4, h5, h6, p {
         }
 }
 
-.contact__container-text {
-    font-family: "Noto Serif", serif;
-    text-decoration: none;
-    font-size: 1.8rem;
+.contact{
+    &__email {
+        text-decoration: none;
+        font-size: 4rem;
+        color: $pink;
+    }
+    &__copyright {
+        font-size: 1rem;
+        color: white;
+        margin-top: 50px;
+        background: $pink;
+        padding: 3px 0 3px 5px;
+    }
+    &__email,
+    &__copyright {
+        font-family: "Noto Serif", serif;
+    }
 }
+
+
 
 // .text-container__subheading,
 // .menu {

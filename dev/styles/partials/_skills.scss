@@ -1,8 +1,45 @@
 .section-skills{
-    &__icons {
+    background: $blue;
+    padding-bottom: 75px;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding:0;
+
+    }
+    &__item {
+        list-style: none;
+        margin: 20px 30px 20px 0;
+    }
+    &__icon {
         font-size: 10rem;
+        // color: $darkgrey;
+        color: white;
     }
     &__image {
-    width: 100px;
+        width: 100px;
     }
+
+.skills-text-container {
+    color: white;
 }
+
+    // &__icon, 
+    // &__image {
+    //     box-shadow: 
+    //         01px 0 $yellow,
+    //         01px 02px $yellow,
+    //         02px 01px $yellow,
+    //         02px 03px $yellow,
+    //         03px 02px $yellow,
+    //         03px 04px $yellow,
+    //         04px 03px $yellow,
+    //         04px 05px $yellow,
+    //         05px 04px $yellow,
+    //         05px 06px $yellow;
+    // }
+}
+
