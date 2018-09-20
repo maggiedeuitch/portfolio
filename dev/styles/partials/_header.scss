@@ -21,3 +21,10 @@
     padding: 0 4%;
 }
 
+
+//////////MEDIA QUERIES///////////////////  
+@media (max-width: 600px) {
+    .logo__text {
+        font-size: 3rem;
+    }
+}

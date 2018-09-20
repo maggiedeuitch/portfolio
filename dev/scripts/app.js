@@ -1,6 +1,5 @@
 const pressed = [];
 const code ="bensbagels";
-// let frameCount = 0;
 
 const finishbagels = () => {
     let bagel = document.getElementById("bagel-container");
@@ -31,13 +30,10 @@ window.addEventListener("keyup", function(e) {
 });
 
 $(function(){
-    console.log("ready");
     $(".ham-menu").click(function () {
         console.log("clicked the menu");
         $(".head-nav").slideToggle("slow");
     });
-   
-    
 })
 
 

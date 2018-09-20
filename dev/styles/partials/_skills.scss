@@ -1,22 +1,25 @@
 .section-skills{
     background: $blue;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     &__list {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
-        padding:0;
+        justify-content: center;
+        align-content: center;
+        padding:40px 0 0 0;
 
     }
     &__item {
         list-style: none;
-        margin: 20px 30px 20px 0;
+        padding: 0px 30px 50px 30px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &__icon {
         font-size: 10rem;
-        // color: $darkgrey;
         color: white;
     }
     &__image {
@@ -26,7 +29,6 @@
 .skills-text-container {
     color: white;
 }
-
 }
 
 ///////////////MEDIA QUERIES////////////////
@@ -50,12 +52,15 @@
 
 @media (max-width: 500px) {
     .section-skills {
-        padding-bottom: 20px;
+        padding-bottom: 0;
         &__icon {
-            font-size: 3.5rem;
+            font-size: 4rem;
         }
         &__image {
             width: 35px;
+        }
+        &__list {
+            padding: 0px 10px 30px 10px;
         }
     }
 }

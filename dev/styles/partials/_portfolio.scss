@@ -1,5 +1,3 @@
-
-
 .portfolio-text-container {
     display: flex;
     flex-direction: row;
@@ -8,6 +6,8 @@
 
 .image-row {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 125px;
         &__link {
             display:inline-block;
@@ -15,7 +15,6 @@
         }
         &__image {
             max-width: 100%;
-            // border: 1px solid $blue;
             box-shadow: 
                 01px 0px $pink,
                 01px 02px $pink,
@@ -138,7 +137,6 @@
                         justify-content: flex-start;
                     }
             }
-
         }
     .link-container {
         margin-top: 20px;
