@@ -37,30 +37,22 @@
 
 
 //// media queries//////////
-    @media (max-width: 400px) {
+    @media (max-width: 560px) {
 
     .head-nav__item {
         margin: 0;
-        width: 75px;
         text-align: right;
         margin-right: 5px;
     }
 
     .head-nav__link--small {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .head-nav {
-        // list-style: none;
-        // flex: 2 1 60%;
-        // display: none;
         text-align: right;
         padding-left: 0;
-        // display: flex;
-        // justify-content: flex-end;
-        // flex-wrap: wrap;
-
-        }
+    }
 }
 
 
